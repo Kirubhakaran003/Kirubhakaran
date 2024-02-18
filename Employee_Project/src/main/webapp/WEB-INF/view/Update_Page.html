@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bc {
+	background-color: #60A5C4;
+}
+
+.tx {
+	text-align: center;
+}
+</style>
+</head>
+
+<body class="bc">
+
+	<h1 class="tx">UPDATE PAGE</h1>
+	<form action="Update_Pages" method="post">
+		<table border="1" class="center">
+			<tr>
+				<td>Employee ID</td>
+				<td><input type="number" readonly name="Id"
+					th:value="${employees.Id}" /></td>
+			</tr>
+			<tr>
+				<td>Employee Name</td>
+				<td><input type="text" name="employeeName"
+					th:value="${employees.employeeName}" /></td>
+			</tr>
+
+			<tr>
+				<td>Employee Address</td>
+				<td><input type="text" name="employeeAddress"
+					th:value="${employees.employeeAddress}" /></td>
+			</tr>
+
+			<tr>
+				<td>Employee Phone</td>
+				<td><input type="text" name="employeePhone"
+					th:value="${employees.employeePhone}" /></td>
+			</tr>
+
+			<tr>
+				<td>Employee Salary</td>
+				<td><input type="text" name="employeeSalary"
+					th:value="${employees.employeeSalary}" /></td>
+			</tr>
+
+			<tr>
+				<td>
+					<button type="submit">update</button>
+				</td>
+				<td>
+					<button type="reset">Reset</button>
+				</td>
+
+
+			</tr>
+		</table>
+	</form>
+
+</body>
+
+</html>

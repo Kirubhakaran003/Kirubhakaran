@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Record</title>
+
+<style>
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bc {
+	background-color: #60A5C4;
+}
+
+.tx {
+	text-align: center;
+}
+</style>
+
+</head>
+
+<body class="bc">
+	<h1 class="tx">ADD RECORD</h1>
+	<form action="Add_details" method="post">
+		<table border="1" class="center">
+
+
+			<tr>
+				<td>Employee Name</td>
+				<td><input type="text" name="employeeName" /></td>
+			</tr>
+
+			<tr>
+				<td>Employee Address</td>
+				<td><input type="text" name="employeeAddress" /></td>
+			</tr>
+
+			<tr>
+				<td>Employee Phone</td>
+				<td><input type="number" name="employeePhone" /></td>
+			</tr>
+
+			<tr>
+				<td>Employee Salary</td>
+				<td><input type="number" name="employeeSalary" /></td>
+			</tr>
+
+			<tr>
+				<td>
+					<button type="submit">Save</button>
+				</td>
+
+				<td>
+					<button type="reset">Reset</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>
